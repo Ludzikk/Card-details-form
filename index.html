@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive card details form</title>
+    <link
+      rel="shortcut icon"
+      href="./dist/img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__top">
+        <img
+          src="./dist/img/bg-card-front.png"
+          alt="Card Front"
+          class="main__cardimg main__cardimg--front"
+        />
+        <img
+          src="./dist/img/bg-card-back.png"
+          alt="Card Back"
+          class="main__cardimg main__cardimg--back"
+        />
+        <img
+          src="./dist/img/card-logo.svg"
+          alt="Card Logo"
+          class="main__cardimg main__cardimg--logo"
+        />
+        <p class="main__textcard main__textcard--cvc">000</p>
+        <p class="main__textcard main__textcard--number">0000 0000 0000 0000</p>
+        <p class="main__textcard main__textcard--name">jane appleseed</p>
+        <p class="main__textcard main__textcard--date">
+          <span class="main__textcard--month">00</span>/<span
+            class="main__textcard--year"
+            >00</span
+          >
+        </p>
+      </div>
+      <div class="main__bottom">
+        <div class="main__submit">
+          <p class="main__text">cardholder name</p>
+          <input
+            type="text"
+            class="main__input"
+            id="name"
+            placeholder="e.g. Jane Appleseed"
+          />
+          <p class="main__error main__error--name"></p>
+          <p class="main__text">card number</p>
+          <input
+            type="text"
+            class="main__input"
+            id="number"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+          <p class="main__error main__error--number"></p>
+          <div class="main__inputsbox">
+            <div class="main__inputstop">
+              <p class="main__text main__text--exp">exp. date (mm/yy)</p>
+              <p class="main__text">cvc</p>
+            </div>
+            <div class="main__inputsbottom">
+              <input
+                type="number"
+                class="main__input main__input--small"
+                id="month"
+                placeholder="MM"
+              />
+              <input
+                type="number"
+                class="main__input main__input--small"
+                id="year"
+                placeholder="YY"
+              />
+              <input
+                type="number"
+                class="main__input main__input--mid"
+                id="cvc"
+                placeholder="e.g. 123"
+              />
+            </div>
+            <div class="main__errorsbtm">
+              <p class="main__error main__error--date"></p>
+              <p class="main__error main__error--cvc"></p>
+            </div>
+          </div>
+          <button class="main__btn main__btn--submit">Confirm</button>
+        </div>
+        <div class="main__popup hidden">
+          <img
+            src="./dist/img/icon-complete.svg"
+            alt="Mark Icon"
+            class="main__popupimg"
+          />
+          <h2 class="main__popuptitle">
+            thank you!
+          </h2>
+          <p class="main__popuptext">We've added your card details</p>
+          <button class="main__btn main__btn--continue">Continue</button>
+        </div>
+      </div>
+    </main>
+    <script src="./dist/js/script.min.js"></script>
+  </body>
+</html>

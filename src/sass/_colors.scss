@@ -1,0 +1,10 @@
+$white: hsl(0, 0%, 100%);
+$lightgrey: hsl(270, 3%, 87%);
+$darkgrey: hsl(279, 6%, 55%);
+$verydark: hsl(278, 68%, 11%);
+$activeinput: linear-gradient(
+	90deg,
+	rgba(96, 5, 148, 1) 0%,
+	rgba(255, 128, 43, 1) 100%
+);
+$errorinput: hsl(0, 100%, 66%);
